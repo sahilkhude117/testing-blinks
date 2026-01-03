@@ -1,0 +1,8 @@
+{
+  "rules": [
+    {
+      "pathPattern": "/api/blink/kalshi/*",
+      "apiPath": "/api/blink/kalshi/*"
+    }
+  ]
+}
