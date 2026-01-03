@@ -55,10 +55,10 @@ export async function OPTIONS() {
 
 export async function POST(
     req: NextRequest,
-    { params }: { params: { ticker : string }}
+    { params }: { params: Promise<{ ticker: string }>}
 ) {
     try {
-        const { ticker } = params;
+        const { ticker } = await params;
         const body: ActionPostRequest = await req.json();
 
         const marketResponse = await getMarket(ticker);
