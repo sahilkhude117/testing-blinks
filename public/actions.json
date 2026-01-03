@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "actions": ["/api/blink/kalshi/*"],
+  "icon": "https://kalshi.com/favicon.ico",
+  "name": "Blinkshi",
+  "description": "Trade Kalshi markets anywhere",
+  "tags": ["prediction-markets", "solana-actions"]
+}

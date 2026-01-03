@@ -1,9 +1,8 @@
 import { getMarket } from "@/app/lib/kalshi";
 import { ActionError, ActionGetResponse, ActionPostRequest, ActionPostResponse, createActionHeaders } from "@solana/actions";
 import { NextRequest, NextResponse } from "next/server"
-import { title } from "process";
 
-const headers = createActionHeaders();
+const headers= createActionHeaders();
 
 export async function GET(
     req: NextRequest,
