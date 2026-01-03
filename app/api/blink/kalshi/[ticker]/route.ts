@@ -7,10 +7,10 @@ const headers = createActionHeaders();
 
 export async function GET(
     req: NextRequest,
-    { params }: { params: { ticker: string }}
+    { params }: { params: Promise<{ ticker: string }>}
 ) {
     try {
-        const { ticker } = params;
+        const { ticker } = await params;
 
         if (!ticker || typeof ticker !== "string") {
             const error: ActionError = { message: "Ticker is required" };
